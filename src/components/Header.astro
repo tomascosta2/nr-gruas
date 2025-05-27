@@ -1,0 +1,28 @@
+---
+import Logo from './Logo.astro';
+import PhoneButton from './PhoneButton.astro';
+---
+
+<header class="fixed w-full top-0 z-50 transition-all duration-300 bg-transparent" id="main-header">
+  <div class="container mx-auto py-4 px-4 md:px-6 flex items-center justify-between">
+    <Logo />
+    <div class="hidden md:block">
+      <PhoneButton variant="header" />
+    </div>
+  </div>
+</header>
+
+<script>
+  // Handle header transparency on scroll
+  const header = document.getElementById('main-header');
+  
+  window.addEventListener('scroll', () => {
+    if (window.scrollY > 50) {
+      header.classList.add('bg-secondary-950/95', 'backdrop-blur-sm', 'shadow-lg');
+      header.classList.remove('bg-transparent');
+    } else {
+      header.classList.remove('bg-secondary-950/95', 'backdrop-blur-sm', 'shadow-lg');
+      header.classList.add('bg-transparent');
+    }
+  });
+</script>

@@ -1,0 +1,56 @@
+---
+const faqs = [
+  {
+    question: "¿Cuánto tiempo tardan en llegar después de mi llamada?",
+    answer: "En zonas urbanas de Mendoza, nuestro tiempo de respuesta promedio es de 20-30 minutos. Para zonas rurales o más alejadas, el tiempo puede variar dependiendo de la ubicación exacta. Al momento de su llamada, nuestro operador le proporcionará un estimado preciso basado en su ubicación y las condiciones actuales."
+  },
+  {
+    question: "¿Qué tipo de vehículos pueden remolcar?",
+    answer: "Nuestra flota está equipada para remolcar prácticamente cualquier tipo de vehículo: automóviles, camionetas, SUVs, motos, vehículos de alta gama, maquinaria liviana y pesada. Contamos con grúas especializadas para cada necesidad, incluyendo plataformas, grúas de gancho y equipos para vehículos de tracción 4x4."
+  },
+  {
+    question: "¿Cuánto cuesta el servicio de grúa?",
+    answer: "El costo varía según la distancia del traslado, el tipo de vehículo y el servicio requerido. Ofrecemos precios transparentes y le informamos el costo exacto antes de iniciar el servicio. Para obtener una cotización inmediata, puede llamarnos y proporcionar los detalles de su situación."
+  },
+  {
+    question: "¿Trabajan con compañías de seguros?",
+    answer: "Sí, trabajamos con todas las principales compañías de seguros en Argentina. Si su póliza incluye servicio de grúa, podemos coordinar directamente con su aseguradora para la autorización y, en muchos casos, para la facturación directa, evitándole desembolsos."
+  },
+  {
+    question: "¿Qué debo hacer si mi vehículo se descompone en la ruta?",
+    answer: "En primer lugar, mueva su vehículo lo más posible hacia la banquina y encienda las luces de emergencia. Si es seguro, coloque triángulos de emergencia a una distancia adecuada. Llámenos inmediatamente y proporciónenos su ubicación lo más precisa posible, usando referencias o la ubicación del GPS. Permanezca en un lugar seguro mientras espera nuestra llegada."
+  },
+  {
+    question: "¿Puedo elegir a dónde llevar mi vehículo?",
+    answer: "Absolutamente. Podemos transportar su vehículo a cualquier destino que usted elija: su domicilio, un taller mecánico, un concesionario, etc. Si no está seguro de dónde llevarlo, podemos recomendarle talleres de confianza según el tipo de problema que presente su vehículo."
+  },
+  {
+    question: "¿Ofrecen asistencia mecánica básica?",
+    answer: "Sí, además del servicio de remolque, ofrecemos asistencia mecánica básica como: arranque de batería, cambio de neumáticos, aprovisionamiento de combustible y soluciones para problemas simples. En muchos casos, esto puede resolver su problema sin necesidad de remolque."
+  },
+  {
+    question: "¿Es necesario que yo esté presente cuando retiren mi vehículo?",
+    answer: "Generalmente es recomendable que usted o un representante esté presente para autorizar el servicio y proporcionar las llaves del vehículo. Sin embargo, en casos especiales, podemos coordinar el retiro sin su presencia, siguiendo protocolos de seguridad y con su autorización previa por teléfono o email."
+  }
+];
+---
+
+<section id="preguntas" class="section bg-white">
+  <div class="container">
+    <div class="section-title">
+      <h2 class="mb-3">Preguntas Frecuentes</h2>
+      <p class="text-secondary-600 max-w-3xl mx-auto text-lg">Respondemos a las consultas más comunes sobre nuestros servicios de grúas en Mendoza.</p>
+    </div>
+    
+    <div class="mt-16 grid grid-cols-1 lg:grid-cols-2 gap-8">
+      {faqs.map((faq, index) => (
+        <div class={`animate-on-scroll ${index % 2 === 1 ? 'animate-delay-100' : ''}`}>
+          <div class="bg-accent-50 rounded-lg p-6 h-full">
+            <h3 class="text-lg font-bold mb-3">{faq.question}</h3>
+            <p class="text-secondary-700">{faq.answer}</p>
+          </div>
+        </div>
+      ))}
+    </div>
+  </div>
+</section>

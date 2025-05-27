@@ -1,0 +1,143 @@
+---
+import PhoneButton from './PhoneButton.astro';
+---
+
+<section id="hero" class="relative min-h-screen flex items-center overflow-hidden">
+  <div class="absolute inset-0">
+    <div class="absolute inset-0 bg-gradient-to-b from-secondary-950/95 to-secondary-900/95"></div>
+    <div class="absolute inset-0 bg-[radial-gradient(circle_at_center,rgba(255,255,255,0.1)_1px,transparent_1px)] bg-[length:24px_24px]"></div>
+  </div>
+  
+  <div class="container relative z-10 py-20 md:mt-10">
+    <div class="hidden md:flex flex-wrap gap-2 md:gap-8 mb-8">
+      <div class="flex items-center gap-3">
+        <div class="text-white">
+          <span class="font-bold">500+</span>
+          <span class="text-white/80"> Clientes satisfechos</span>
+        </div>
+      </div>
+
+      <div class="flex items-center gap-2">
+        <div class="flex">
+          {[...Array(5)].map(() => (
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="w-5 h-5 text-accent-500">
+              <path fill-rule="evenodd" d="M10.788 3.21c.448-1.077 1.976-1.077 2.424 0l2.082 5.007 5.404.433c1.164.093 1.636 1.545.749 2.305l-4.117 3.527 1.257 5.273c.271 1.136-.964 2.033-1.96 1.425L12 18.354 7.373 21.18c-.996.608-2.231-.29-1.96-1.425l1.257-5.273-4.117-3.527c-.887-.76-.415-2.212.749-2.305l5.404-.433 2.082-5.006z" clip-rule="evenodd" />
+            </svg>
+          ))}
+        </div>
+        <div class="text-white">
+          <span class="font-bold">5/5</span>
+          <span class="text-white/80"> Calificación (98)</span>
+        </div>
+      </div>
+
+      <div class="flex items-center gap-2">
+        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6 text-accent-500">
+          <path stroke-linecap="round" stroke-linejoin="round" d="M12 6v6h4.5m4.5 0a9 9 0 11-18 0 9 9 0 0118 0z" />
+        </svg>
+        <div class="text-white">
+          <span class="font-bold">25 min</span>
+          <span class="text-white/80"> tiempo promedio de llegada</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="max-w-3xl">
+      <h1 class="text-white text-3xl md:text-5xl lg:text-6xl font-extrabold leading-tight mb-4">
+        <span>Servicio de Grúas en Mendoza</span>
+        <span class="text-accent-500">Asistencia Inmediata 24/7</span>
+        <span class="text-2xl md:text-3xl lg:text-4xl block mt-4 text-white/80">Ciudad, Gran Mendoza y Toda la Provincia</span>
+      </h1>
+      
+      <p class="text-white/90 text-xl md:text-2xl leading-relaxed mb-4">
+        Grúas y remolques para todo tipo de vehículos. Llegamos en menos de 30 minutos en el Gran Mendoza.
+      </p>
+      
+      <div class="flex flex-col sm:flex-row gap-4 mb-12">
+        <PhoneButton variant="hero" />
+        <a href="#servicios" class="btn btn-outline btn-lg">
+          Nuestros Servicios
+        </a>
+      </div>
+
+      <div class="md:hidden flex flex-wrap gap-2 md:gap-8 mb-8">
+      <div class="flex items-center gap-3">
+        <div class="text-white">
+          <span class="font-bold">500+</span>
+          <span class="text-white/80"> Clientes satisfechos</span>
+        </div>
+      </div>
+
+      <div class="flex items-center gap-2">
+        <div class="flex">
+          {[...Array(5)].map(() => (
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="w-5 h-5 text-accent-500">
+              <path fill-rule="evenodd" d="M10.788 3.21c.448-1.077 1.976-1.077 2.424 0l2.082 5.007 5.404.433c1.164.093 1.636 1.545.749 2.305l-4.117 3.527 1.257 5.273c.271 1.136-.964 2.033-1.96 1.425L12 18.354 7.373 21.18c-.996.608-2.231-.29-1.96-1.425l1.257-5.273-4.117-3.527c-.887-.76-.415-2.212.749-2.305l5.404-.433 2.082-5.006z" clip-rule="evenodd" />
+            </svg>
+          ))}
+        </div>
+        <div class="text-white">
+          <span class="font-bold">5/5</span>
+          <span class="text-white/80"> Calificación (98)</span>
+        </div>
+      </div>
+
+      <div class="flex items-center gap-2">
+        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6 text-accent-500">
+          <path stroke-linecap="round" stroke-linejoin="round" d="M12 6v6h4.5m4.5 0a9 9 0 11-18 0 9 9 0 0118 0z" />
+        </svg>
+        <div class="text-white">
+          <span class="font-bold">25 min</span>
+          <span class="text-white/80"> tiempo promedio de llegada</span>
+        </div>
+      </div>
+    </div>
+      
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-6 mt-12">
+        <div class="bg-white/10 backdrop-blur-sm rounded-xl p-6 border border-white/20 transform transition hover:scale-105 animate-on-scroll">
+          <div class="flex items-center mb-3">
+            <div class="min-w-10 w-10 h-10 rounded-full bg-accent-500 flex items-center justify-center mr-3">
+              <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-5 h-5 text-white">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M12 6v6h4.5m4.5 0a9 9 0 11-18 0 9 9 0 0118 0z" />
+              </svg>
+            </div>
+            <h3 class="text-xl font-bold text-white">Rapidez Garantizada</h3>
+          </div>
+          <p class="text-white/80">Llegamos en menos de 30 minutos a cualquier punto de la ciudad.</p>
+        </div>
+        
+        <div class="bg-white/10 backdrop-blur-sm rounded-xl p-6 border border-white/20 transform transition hover:scale-105 animate-on-scroll animate-delay-100">
+          <div class="flex items-center mb-3">
+            <div class="w-10 h-10 rounded-full bg-accent-500 flex items-center justify-center mr-3">
+              <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-5 h-5 text-white">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M2.25 18.75a60.07 60.07 0 0115.797 2.101c.727.198 1.453-.342 1.453-1.096V18.75M3.75 4.5v.75A.75.75 0 013 6h-.75m0 0v-.375c0-.621.504-1.125 1.125-1.125H20.25M2.25 6v9m18-10.5v.75c0 .414.336.75.75.75h.75m-1.5-1.5h.375c.621 0 1.125.504 1.125 1.125v9.75c0 .621-.504 1.125-1.125 1.125h-.375m1.5-1.5H21a.75.75 0 00-.75.75v.75m0 0H3.75m0 0h-.375a1.125 1.125 0 01-1.125-1.125V15m1.5 1.5v-.75A.75.75 0 003 15h-.75M15 10.5a3 3 0 11-6 0 3 3 0 016 0zm3 0h.008v.008H18V10.5zm-12 0h.008v.008H6V10.5z" />
+              </svg>
+            </div>
+            <h3 class="text-xl font-bold text-white">Precios Claros</h3>
+          </div>
+          <p class="text-white/80">Sin sorpresas ni cargos ocultos. Cotización inmediata por teléfono.</p>
+        </div>
+        
+        <div class="bg-white/10 backdrop-blur-sm rounded-xl p-6 border border-white/20 transform transition hover:scale-105 animate-on-scroll animate-delay-200">
+          <div class="flex items-center mb-3">
+            <div class="w-10 h-10 rounded-full bg-accent-500 flex items-center justify-center mr-3">
+              <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-5 h-5 text-white">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M9 12.75L11.25 15 15 9.75m-3-7.036A11.959 11.959 0 013.598 6 11.99 11.99 0 003 9.749c0 5.592 3.824 10.29 9 11.623 5.176-1.332 9-6.03 9-11.622 0-1.31-.21-2.571-.598-3.751h-.152c-3.196 0-6.1-1.248-8.25-3.285z" />
+              </svg>
+            </div>
+            <h3 class="text-xl font-bold text-white">100% Seguro</h3>
+          </div>
+          <p class="text-white/80">Operadores certificados y equipos modernos para garantizar la integridad de su vehículo.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+  
+  <div class="absolute bottom-6 left-0 right-0 flex justify-center animate-bounce">
+    <a href="#servicios" aria-label="Ver más" class="text-white opacity-80 hover:opacity-100">
+      <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-8 h-8">
+        <path stroke-linecap="round" stroke-linejoin="round" d="M19.5 8.25l-7.5 7.5-7.5-7.5" />
+      </svg>
+    </a>
+  </div>
+</section>

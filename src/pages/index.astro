@@ -1,0 +1,26 @@
+---
+import Layout from '../layouts/Layout.astro';
+import Hero from '../components/Hero.astro';
+import LocalCoverage from '../components/LocalCoverage.astro';
+import Services from '../components/Services.astro';
+import Process from '../components/Process.astro';
+import Benefits from '../components/Benefits.astro';
+import Testimonials from '../components/Testimonials.astro';
+import Faq from '../components/Faq.astro';
+import Cta from '../components/Cta.astro';
+
+// SEO Metadata
+const title = "NR Gruas Mendoza | Servicio de Grúas y Remolques 24/7 | Asistencia Inmediata";
+const description = "Servicio premium de grúas en Mendoza y Gran Mendoza. Asistencia inmediata 24/7, precios transparentes y amplia cobertura en toda la provincia. Grúas para todo tipo de vehículos. ¡Llame ahora para emergencias!";
+---
+
+<Layout title={title} description={description}>
+  <Hero />
+  <LocalCoverage />
+  <Services />
+  <Process />
+  <Benefits />
+  <Testimonials />
+  <Faq />
+  <Cta />
+</Layout>
