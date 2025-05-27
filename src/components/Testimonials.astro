@@ -41,7 +41,6 @@ const testimonials = [
             <img src={testimonial.image} alt={testimonial.name} class="w-16 h-16 rounded-full mr-4 object-cover" />
             <div>
               <h4 class="font-bold text-lg">{testimonial.name}</h4>
-              <p class="text-secondary-500 text-sm">{testimonial.position}</p>
               <div class="flex mt-1">
                 {[...Array(testimonial.rating)].map(() => (
                   <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="w-4 h-4 text-accent-500">
